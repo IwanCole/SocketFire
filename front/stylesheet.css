@@ -1,0 +1,57 @@
+html {
+    margin: 0;
+    background-color: #222222;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.terminal, .config {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.config {
+    height: 100vh;
+    float: right;
+}
+.terminal {
+    background-color: #000000;
+    height: 100vh;
+    padding: 10px;
+}
+.terminal-input {
+    bottom: 10px;
+    width: 48%;
+    position: absolute;
+    background-color: #000;
+    border-color: #111;
+    color: #eeeeee;
+    border-style: solid none none none;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    padding: 10px 0 0 0;
+}
+.terminal-input:focus {
+    outline: none;
+}
+.terminal-entry {
+    display: block;
+    margin: 0;
+}
+.terminal-text, .terminal-num {
+    margin: 0;
+    font-family: "Courier New", Courier, monospace;
+    display: inline-block;
+    color: #fff;
+}
+.terminal-num {
+    width: 30px;
+}
+.terminal-anchor {
+    display: block;
+    bottom: 50px;
+    position: absolute;
+}
