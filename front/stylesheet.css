@@ -2,10 +2,42 @@ html {
     margin: 0;
     background-color: #222222;
     overflow: hidden;
+    font-family: "Courier New", Courier, monospace;
 }
 body {
     margin: 0;
     overflow: hidden;
+}
+input:focus {
+    outline: none;
+}
+
+button {
+    margin: 10px 5px;
+    width: 150px;
+    height: 50px;
+    background-color: #111111;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "Courier New", Courier, monospace;
+    border: #666666 solid 2px;
+    border-radius: 16px;
+    font-size: 18px;
+    transition-duration: 60ms;
+}
+button:active {
+    transform: translateY(2px);
+    background-color: #000000;
+    color: #ededed;
+    outline: none;
+    border: #444444 solid 2px;
+}
+button:focus {
+    outline: none;
+}
+button:disabled {
+    color: #888888;
+    border: #444444 solid 2px;
 }
 
 .terminal, .config {
@@ -39,19 +71,74 @@ body {
 }
 .terminal-entry {
     display: block;
-    margin: 0;
+    margin: 2px 0 0 0;
+    max-width: 100%;
 }
 .terminal-text, .terminal-num {
     margin: 0;
     font-family: "Courier New", Courier, monospace;
     display: inline-block;
-    color: #fff;
+    color: #ffffff;
 }
+.terminal-text {
+    max-width: 90%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+
+}
+.terminal-text-normal {
+    color: #ffffff;
+}
+
+.terminal-text-info {
+    color:  #b7b7b7;
+    font-style: italic;
+}
+
+.terminal-text-warning {
+    color: #ffde95;
+}
+
+.terminal-text-error {
+    color: #ff9595;
+}
+
 .terminal-num {
     width: 30px;
 }
 .terminal-anchor {
+    width: 49%;
     display: block;
     bottom: 50px;
     position: absolute;
 }
+
+.config-address {
+    border: solid;
+    border-color: #333333;
+    border-width: 1px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+    display: block;
+}
+.config-address > * {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+    display: inline-block;
+    color: #ffffff;
+    margin: 0;
+}
+.config-address > input {
+    border: none;
+    background-color: inherit;
+    width: auto;
+}
+.config-controls {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
