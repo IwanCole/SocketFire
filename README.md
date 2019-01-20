@@ -2,6 +2,9 @@
 Script to send user input at a socket. Useful for testing a connection when developing other apps.
 Use the CLI for testing regular sockets, and the web interface for testing WebSockets.
 
+
+Go to [IwanCole.github.io/SocketFire](https://iwancole.github.io/SocketFire) to use the WebSocketFire interface.
+
 ### Usage
 Use npm install to install the required dependencies. To run, use
 
